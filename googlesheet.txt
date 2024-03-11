@@ -1,0 +1,36 @@
+Patient Master Sheet Download Form (https://docs.google.com/spreadsheets/d/1bmPar_Atfmhg7ReExPlyRubHY0gk8Ng7tOMH-iAM5ow/edit?usp=sharing)
+Enter patient id
+Download button
+
+Buttons + Filters to download CSV
+Filter for Start Date and End Date for all these sheets
+Employee performance
+How many patients they handled during that period
+Activity 
+Diet chart uploaded/allocated
+Prescriptions created
+Chat message count
+Patient feedback during the tenure
+Form Mastersheet: Select a form (from searchable dropdown) and download all the data 
+Column Headers: Patient name, phone, team, program, filling date, question1, question2, question3, ....
+
+Form Question/Value specific
+Example: HbA1c pattern of all patients
+(Sheet 2 on this link: https://docs.google.com/spreadsheets/d/1bmPar_Atfmhg7ReExPlyRubHY0gk8Ng7tOMH-iAM5ow/edit#gid=698977946)
+Patient platform usage summary
+Count of Forms filled (grouped by form name)
+Appointments attended
+List of personal observations
+Chat count
+Primary Team
+Secondary Team
+Program enrolled
+Multiple rows of the same patient for multiple enrolments
+List of all chat messages sent and received 
+Sender Name 
+Sender ID
+Sender Type
+Message Text
+TBD
+Combined master sheet
+Program success chart System revenue, patient engagement, patient success, employee feedback

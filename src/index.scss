@@ -1,0 +1,36 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+html,
+body {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+.max-width{
+  max-height: 435px
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "sass/main.scss";
+
+/* Syncfusion Import*/
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-react-navigations/styles/material.css';

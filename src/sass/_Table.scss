@@ -1,0 +1,29 @@
+.table {
+  &__Container {
+    @apply w-full;
+  }
+
+  &__Head {
+    @apply bg-gray-50 border-b-2 border-gray-200;
+
+    &--Text {
+      @apply w-24 p-3 text-lg font-semibold tracking-wide text-left;
+    }
+  }
+
+  &__Body {
+    &--Row {
+      @apply bg-white border-b;
+
+      &_Data {
+        @apply p-3 text-base capitalize text-gray-700 whitespace-nowrap;
+      }
+    }
+
+    &--Status {
+      &_Icons {
+        @apply h-6 w-6 hover:text-rose-500 inline-block mr-3;
+      }
+    }
+  }
+}

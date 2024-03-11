@@ -1,0 +1,129 @@
+.card{
+
+    &__Container {
+        &--Start {
+            @apply flex justify-start;
+        }
+
+        &--Evenly {
+            @apply flex justify-evenly;
+        }
+
+        &--Btwn {
+            @apply flex justify-between;
+        }
+
+        &--Around {
+            @apply flex justify-around;
+        }
+    }
+
+    &__Block {
+        @apply block p-6 rounded-lg shadow-lg bg-white max-w-sm;
+    }
+
+    &__Heading {
+        @apply text-gray-900 text-xl leading-tight font-medium mb-2;
+        &--Span {
+            @apply text-xs inline-block mx-3 py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold rounded-full;
+        }
+    }
+
+    &__Bg {
+        &--Red {
+            @apply bg-red-500 text-white;
+        }
+        &--Teal {
+            @apply bg-teal-500 text-white;
+        }
+        &--Grey {
+            @apply bg-gray-500 text-white;
+        }
+        &--Cyan {
+            @apply bg-cyan-500 text-white;
+        }
+        &--Green {
+            @apply bg-green-500 text-white;
+        }
+
+        &--Sky {
+            @apply bg-sky-500 text-white;
+        }
+    }
+
+    &__Info {
+        @apply text-gray-700 text-base mb-4;
+    }
+
+    &__Btn {
+        @apply inline-block px-6 py-2.5 font-medium text-xs leading-tight uppercase rounded shadow-md transition duration-150 ease-in-out;
+
+        &--Gap-1{
+            @apply mx-4;
+        }
+
+        &--Gap-2{
+            @apply mx-6;
+        }
+
+        &--Bg-Red {
+            &:hover {
+                @apply hover:bg-red-700 hover:shadow-lg;
+            }
+            &:focus {
+                @apply focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0;
+            }
+            &:active {
+                @apply active:bg-red-800 active:shadow-lg;
+            }
+        }
+
+        &--Bg-Teal {
+            &:hover {
+                @apply hover:bg-teal-700 hover:shadow-lg;
+            }
+            &:focus {
+                @apply focus:bg-teal-700 focus:shadow-lg focus:outline-none focus:ring-0;
+            }
+            &:active {
+                @apply active:bg-teal-800 active:shadow-lg;
+            }
+        }
+
+        &--Bg-Cyan {
+            &:hover {
+                @apply hover:bg-cyan-700 hover:shadow-lg;
+            }
+            &:focus {
+                @apply focus:bg-cyan-700 focus:shadow-lg focus:outline-none focus:ring-0;
+            }
+            &:active {
+                @apply active:bg-cyan-800 active:shadow-lg;
+            }
+        }
+
+        &--Bg-Green {
+            &:hover {
+                @apply hover:bg-green-700 hover:shadow-lg;
+            }
+            &:focus {
+                @apply focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0;
+            }
+            &:active {
+                @apply active:bg-green-800 active:shadow-lg;
+            }
+        }
+
+        &--Bg-Sky {
+            &:hover {
+                @apply hover:bg-sky-700 hover:shadow-lg;
+            }
+            &:focus {
+                @apply focus:bg-sky-700 focus:shadow-lg focus:outline-none focus:ring-0;
+            }
+            &:active {
+                @apply active:bg-sky-800 active:shadow-lg;
+            }
+        }
+    }
+}

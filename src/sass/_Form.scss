@@ -1,0 +1,148 @@
+.form {
+  &__Box-Shadow {
+    @apply shadow sm:overflow-hidden sm:rounded-md;
+  }
+
+  &__Box-Space {
+    @apply space-y-6 bg-gray-50 px-4 py-5 sm:p-6;
+  }
+
+  &__Grid {
+    &--Cols-2 {
+      @apply grid grid-cols-2 gap-6;
+    }
+    &--Cols-6 {
+      @apply grid grid-cols-6 gap-6;
+    }
+
+    &--Rows-none {
+      @apply grid grid-rows-none gap-6;
+    }
+  }
+
+  &__Cols {
+    &--Span-2 {
+      @apply col-span-3 sm:col-span-2;
+    }
+
+    &--Span-3 {
+      @apply col-span-3 sm:col-span-3;
+    }
+
+    &--Span-6 {
+      @apply col-span-6 sm:col-span-3;
+    }
+    &--Span-12 {
+      @apply col-span-12  sm:col-span-6;
+    }
+  }
+
+  &__Gap-1 {
+    @apply py-3 sm:p-6;
+  }
+
+  &__Label-Heading {
+    @apply block text-sm font-medium text-gray-700;
+  }
+
+  &__Heading {
+    @apply block text-lg capitalize font-medium text-gray-700;
+  }
+
+  &__Flex {
+    &-ImgBox {
+      @apply mt-1 flex items-center;
+    }
+
+    &-SpanBox {
+      @apply inline-block h-12 w-12 overflow-hidden rounded-full bg-gray-400 shadow-md;
+    }
+
+    &-Svg {
+      @apply h-full w-full text-gray-200;
+    }
+
+    &-Btn[type="button"] {
+      @apply ml-5 rounded-md border border-gray-300 bg-white py-2 px-3 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+    }
+  }
+
+  &__Input {
+    &[type="tel"],
+    &[type="text"],
+    &[type="email"],
+    &[type="number"],
+    &[type="date"],
+    &[type="month"],
+    &[type="time"] {
+      @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm;
+    }
+
+    &--Error {
+      @apply text-lg text-red-600 font-medium pt-2;
+    }
+  }
+
+  &__EditInput {
+    &[type="tel"],
+    &[type="text"],
+    &[type="email"],
+    &[type="number"],
+    &[type="date"],
+    &[type="month"],
+    &[type="time"] {
+      @apply mt-1 block w-1/2 relative bottom-[13px] right-[13px] font-semibold rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm;
+    }
+
+    &--Error {
+      @apply text-lg text-red-600 font-medium pt-2;
+    }
+  }
+
+  &__Textarea {
+    @apply mt-1 block w-full  border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm;
+  }
+
+  &__Select {
+    @apply mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm sm:text-sm;
+
+    &:focus-visible {
+      @apply focus:border-indigo-500 focus:outline-none focus:ring-indigo-500;
+    }
+  }
+  &__SelectType {
+    @apply mt-1 block w-32 mx-2 my-3 rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm sm:text-sm;
+
+    &:focus-visible {
+      @apply focus:border-indigo-500 focus:outline-none focus:ring-indigo-500;
+    }
+  }
+
+  &__Btn {
+    &-Bg {
+      @apply bg-gray-200 px-4 py-3 text-right sm:px-6;
+    }
+
+    &-Submit[type="submit"] {
+      @apply inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm;
+
+      &:hover {
+        @apply hover:bg-indigo-700;
+      }
+
+      &:focus-visible {
+        @apply focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+      }
+    }
+
+    &-Green[type="submit"] {
+      @apply inline-flex justify-center rounded-md border border-transparent bg-teal-600 py-2 px-2 text-lg font-medium text-white shadow-sm;
+      &:hover {
+        @apply hover:bg-teal-700;
+      }
+      &:focus {
+        @apply focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2;
+      }
+    }
+  }
+}

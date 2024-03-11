@@ -1,0 +1,79 @@
+.chat {
+
+    &__Flexbox {
+        @apply flex h-full;
+    }
+
+    &__Block {
+        @apply hidden xl:block w-64 bg-gray-200;
+    }
+
+    &__Profilebox {
+        @apply w-32 h-32 rounded-full m-auto mt-16 border-2 border-white bg-white shadow-lg;
+    }
+
+    &__Username {
+        @apply text-gray-800 mt-8;
+
+        &--Span {
+            @apply inline-block align-text-bottom;
+        }
+
+    }
+
+    &__Menubox {
+        @apply block py-4 px-12 border-l-4 border-gray-800 bg-gray-300 text-black hover:bg-gray-300 hover:text-black;
+
+        &--Span {
+            @apply inline-block align-text-bottom;
+        }
+    }
+
+    &__Span {
+        @apply inline-block align-text-bottom;
+    }
+
+    &__Gap {
+        &--1 {
+            @apply mr-2;
+        }
+    }
+
+    &__Flex {
+        &--Container {
+            @apply bg-gray-100 w-full h-full;
+        }
+
+        &--Box {
+            @apply container m-auto w-11/12 h-full flex flex-col;
+        }
+
+        &--Row {
+            @apply py-4 flex flex-row;
+        }
+
+        &--Block {
+            &-Inline {
+                &_1 {
+                    @apply xl:hidden inline-block text-gray-700 hover:text-gray-900 align-bottom;
+                }
+                &_2 {
+                    @apply lg:hidden inline-block ml-8 text-gray-700 hover:text-gray-900 align-bottom;
+                }
+            }
+            &-Span {
+                &_1 {
+                    @apply block h-6 w-6 p-1 rounded-full hover:bg-gray-400;
+                }
+                &_2 {
+                    @apply block h-6 w-6 p-1 rounded-full hover:bg-gray-400;
+                }
+            }
+            &-Svg {
+                @apply w-4 h-4;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,18 @@
+.footer {
+    &__Box {
+        @apply relative text-center text-white;
+    }
+
+    &__Container {
+        @apply container w-full pt-9 bg-gray-600 fixed bottom-0 left-0 right-0;
+    }
+
+    &__Flex {
+        &--Box {
+            @apply flex justify-center mb-9;
+        }
+        &--Links {
+            @apply mr-9 text-white;
+        }
+    }
+}

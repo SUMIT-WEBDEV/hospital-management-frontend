@@ -1,0 +1,70 @@
+.tabs {
+
+    &__List-Container {
+        @apply flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4;
+    }
+
+    // &__List-Item {
+    //     @apply nav-item flex-grow text-center;
+    // }
+
+    // &__List-Link {
+    //     @apply nav-link w-full block font-medium text-base leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2;
+    //     &:hover {
+    //         @apply hover:border-blue-500 hover:bg-gray-100;
+    //     }
+    //     &:focus {
+    //         @apply focus:border-indigo-600;
+    //     }
+    //     &:active {
+    //         @apply active border-indigo-600;
+    //     }
+    // }
+
+    // &__Content {
+    //     @apply tab-content;
+    // }
+
+    // &__Collapse {
+    //     @apply tab-pane fade;
+
+    //     &:active {
+    //         @apply active;
+    //     }
+    // }
+
+    // &__Show {
+    //     @apply show;
+    // }
+
+    // &__Text {
+    //     @apply text-center text-xl font-medium;
+    // }
+
+}
+
+//Syncfusion Tabs SCSS
+.e-tab .e-tab-header .e-toolbar-item .e-tab-text  {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    color: #134e4a;
+  }
+  
+  .e-tab .e-tab-header .e-toolbar-item .e-tab-icon {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    color: #134e4a;
+  }
+  
+  .e-tab .e-tab-header .e-toolbar-item.e-active .e-tab-text,
+  .e-tab .e-tab-header .e-toolbar-item.e-active .e-tab-icon,
+  .e-toolbar-item .e-template {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    color: #064e3b;
+  }
+  
+  .e-tab .e-content .e-item {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+  }

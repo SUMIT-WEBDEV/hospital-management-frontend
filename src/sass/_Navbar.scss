@@ -1,0 +1,184 @@
+.navbar {
+
+    &__BG {
+        @apply bg-gray-800;
+    }
+
+    //Desktop
+    &__Container-Desk {
+        @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+    }
+
+    &__Flex {
+        &--Box {
+            @apply flex h-16 items-center justify-between;
+        }
+
+        &--Items {
+            @apply flex items-center;
+        }
+
+        &--LogoBox {
+            @apply flex-shrink-0;
+
+            &-Logo {
+                @apply h-8 w-8;
+            }
+
+        }
+
+        &--NavItems {
+            @apply ml-10 flex items-baseline space-x-4;
+
+            &-Anchor {
+                @apply px-3 py-2 rounded-md text-sm font-medium;
+
+                &_BG {
+                    @apply bg-gray-900 text-white;
+                }
+                &_Hover {
+                    @apply text-gray-300 hover:bg-gray-700 hover:text-white;
+                }
+            }
+
+        }
+
+    }
+
+    &__RightBox {
+        @apply ml-4 flex items-center md:ml-6;
+
+        &--Btn {
+            @apply rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800;
+
+            &-Span {
+                @apply sr-only;
+            }
+
+            &-Icon {
+                @apply h-6 w-6;
+            }
+
+        }
+
+    }
+
+    &__ProfileBox {
+        @apply relative ml-3;
+
+        &--Btn {
+            &[type="button"] {
+                @apply flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800;
+            }
+            &-Img {
+                @apply h-8 w-8 rounded-full;
+            }
+        }
+
+        &--ItemsBox {
+            @apply absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none;
+        }
+
+        &--Item {
+            @apply block px-4 py-2 text-sm text-gray-700;
+
+            &-Active {
+                @apply bg-gray-100;
+            }
+        }
+
+    }
+
+    &__Hidden-MD {
+        @apply hidden md:block;
+    }
+
+    //Mobile
+    &__Menu-Hidden {
+        @apply -mr-2 flex md:hidden;
+    }
+
+    &__Menu-Btn[type="button"] {
+        @apply inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800;
+    }
+
+    &__Menu-Icon {
+        @apply block h-6 w-6;
+    }
+
+    &__Menu-Hide {
+        @apply md:hidden;
+    }
+
+    &__Menu-Mobile-Box {
+        @apply space-y-1 px-2 pt-2 pb-3 sm:px-3;
+    }
+
+    &__Menu-Mobile{
+        &--Items {
+            @apply block px-3 py-2 rounded-md text-base font-medium;
+
+            &-BG {
+                @apply bg-gray-900 text-white;
+            }
+
+            &-Hover {
+                @apply text-gray-300 hover:bg-gray-700 hover:text-white;
+            }
+        }
+    }
+
+    &__Border-Mobile {
+        @apply border-t border-gray-700 pt-4 pb-3;
+    }
+
+    &__FlexBox-Mobile {
+        @apply flex items-center px-5;
+    }
+
+    &__Flex-ImgBox-Mobile {
+        @apply flex-shrink-0;
+    }
+
+    &__Flex-Img-Mobile {
+        @apply h-10 w-10 rounded-full;
+    }
+
+    &__User-List-Mobile {
+        @apply ml-3;
+    }
+
+    &__User-Name-Mobile {
+        @apply text-base font-medium leading-none text-white;
+    }
+
+    &__User-Email-Mobile {
+        @apply text-sm font-medium leading-none text-gray-400;
+    }
+
+    &__Btn-Box-Mobile[type="button"] {
+        @apply ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800;
+    }
+
+    &__Btn-Box-Mobile {
+        &--Span {
+            @apply sr-only;
+        }
+
+        &--Icon {
+            @apply h-6 w-6;
+        }
+    }
+
+    &__List-Items-Mobile {
+        @apply mt-3 space-y-1 px-2;
+    }
+
+    &__List-Item-Mobile {
+        @apply block rounded-md px-3 py-2 text-base font-medium text-gray-400;
+        &:hover {
+            @apply hover:bg-gray-700 hover:text-white;
+        }
+    }
+
+}

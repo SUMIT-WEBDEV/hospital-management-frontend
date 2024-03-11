@@ -1,0 +1,25 @@
+.list {
+    &__Flexbox {
+        &--Center {
+            @apply flex justify-center;
+        }
+    }
+
+    &__Container {
+        @apply bg-white rounded-lg border border-gray-200 w-96 text-gray-900;
+    }
+
+    &__Round {
+        &--Top-Lg {
+            @apply rounded-t-lg;
+        }
+    }
+
+    &__Heading {
+        @apply px-6 py-2 border-b border-gray-200 w-full text-gray-700 font-semibold;
+
+        &--Span {
+            @apply mx-3 px-3 py-2 text-gray-700 font-normal;
+        }
+    }
+}
